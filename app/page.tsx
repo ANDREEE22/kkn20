@@ -21,7 +21,7 @@ export default function Beranda() {
         <Container className="relative flex min-h-[86vh] flex-col justify-center py-24">
           <p className="eyebrow animate-fade-up">Kuliah Kerja Nyata · Kelompok 20</p>
           <h1 className="mt-5 max-w-3xl animate-fade-up font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-7xl">
-            Mengabdi di dataran tinggi di desa{' '}
+            Mengabdi di dataran tinggi{' '}
             <span className="italic text-gold">Kabuaran.</span>
           </h1>
           <p className="mt-6 max-w-xl animate-fade-up font-body text-lg leading-relaxed text-muted" style={{ animationDelay: '0.15s' }}>
