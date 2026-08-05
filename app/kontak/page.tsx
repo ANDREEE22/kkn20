@@ -1,4 +1,5 @@
-import { MapPin, Mail, Instagram, Phone } from 'lucide-react';
+import { MapPin, Mail, Instagram } from 'lucide-react';
+import TikTokIcon from '@/components/icons/tiktok';
 import Container from '@/components/ui/container';
 import Reveal from '@/components/ui/reveal';
 import ContactForm from './contact-form';
@@ -37,21 +38,38 @@ export default function KontakPage() {
               <Mail size={18} className="mt-1 text-gold" />
               <div>
                 <p className="font-mono text-[0.7rem] uppercase tracking-wider text-muted">Email</p>
-                <p className="mt-1 font-body text-sm text-cream/90">kkn20kabuaran@gmail.com</p>
+                <a
+                  href="mailto:kkn20kabuaran@gmail.com"
+                  className="mt-1 block font-body text-sm text-cream/90 transition-colors hover:text-gold"
+                >
+                  kkn20kabuaran@gmail.com
+                </a>
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <Phone size={18} className="mt-1 text-gold" />
+              <TikTokIcon size={18} className="mt-1 text-gold" />
               <div>
-                <p className="font-mono text-[0.7rem] uppercase tracking-wider text-muted">Sekretariat</p>
-                <p className="mt-1 font-body text-sm text-cream/90">+62 8xx-xxxx-xxxx</p>
+                <p className="font-mono text-[0.7rem] uppercase tracking-wider text-muted">TikTok</p>
+                <a
+                  href="https://www.tiktok.com/kkn20kabuaran"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 block font-body text-sm text-cream/90 transition-colors hover:text-gold">kkn20kabuaran
+                </a>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Instagram size={18} className="mt-1 text-gold" />
               <div>
                 <p className="font-mono text-[0.7rem] uppercase tracking-wider text-muted">Instagram</p>
-                <p className="mt-1 font-body text-sm text-cream/90">@kkn20.kabuaran</p>
+                <a
+                  href="https://www.instagram.com/kkn20_kabuaran"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 block font-body text-sm text-cream/90 transition-colors hover:text-gold"
+                >
+                  kkn20_kabuaran
+                </a>
               </div>
             </div>
           </div>

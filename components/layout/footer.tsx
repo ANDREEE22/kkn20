@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { MapPin, Mail, Instagram } from 'lucide-react';
+import TikTokIcon from '@/components/icons/tiktok';
 
 export default function Footer() {
   return (
@@ -36,11 +37,34 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail size={16} className="shrink-0 text-gold" />
-              kkn20kabuaran@gmail.com
+              <a
+                href="mailto:kkn20kabuaran@gmail.com"
+                className="hover:text-gold"
+              >
+                kkn20kabuaran@gmail.com
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <TikTokIcon size={16} className="shrink-0 text-gold" />
+              <a
+                href="https://www.tiktok.com/kkn20kabuaran"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-gold"
+              >
+                kkn20kabuaran
+              </a>
             </li>
             <li className="flex items-center gap-2">
               <Instagram size={16} className="shrink-0 text-gold" />
-              @kkn20.kabuaran
+              <a
+                href="https://www.instagram.com/kkn20_kabuaran"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-gold"
+              >
+                kkn20_kabuaran
+              </a>
             </li>
           </ul>
         </div>

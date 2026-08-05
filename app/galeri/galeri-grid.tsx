@@ -40,12 +40,20 @@ export default function GaleriGrid({ items }: { items: FotoGaleri[] }) {
               onClick={() => setSelected(g)}
               className="group relative block w-full overflow-hidden rounded-xl border border-ink-border"
             >
-              <div
-                className="flex aspect-square w-full items-center justify-center bg-ink-surface2 bg-[radial-gradient(circle_at_30%_20%,rgba(201,162,75,0.15),transparent_60%)] text-center font-body text-xs text-muted"
-                aria-hidden={!!g.src}
-              >
-                <span className="px-4">{g.caption}</span>
-              </div>
+              {g.src ? (
+                <img
+                  src={g.src}
+                  alt={g.caption}
+                  className="aspect-square w-full object-cover"
+                  loading="lazy"
+                />
+              ) : (
+                <div
+                  className="flex aspect-square w-full items-center justify-center bg-ink-surface2 bg-[radial-gradient(circle_at_30%_20%,rgba(201,162,75,0.15),transparent_60%)] text-center font-body text-xs text-muted"
+                >
+                  <span className="px-4">{g.caption}</span>
+                </div>
+              )}
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-ink/80 via-transparent to-transparent p-3 opacity-0 transition-opacity group-hover:opacity-100">
                 <p className="font-body text-xs text-cream">{g.caption}</p>
               </div>
@@ -67,7 +75,11 @@ export default function GaleriGrid({ items }: { items: FotoGaleri[] }) {
             <X size={28} />
           </button>
           <div className="max-w-xl text-center">
-            <div className="aspect-video w-full rounded-xl bg-ink-surface2 bg-[radial-gradient(circle_at_30%_20%,rgba(201,162,75,0.2),transparent_60%)]" />
+            <img
+              src={selected.src}
+              alt={selected.caption}
+              className="w-full max-h-[80vh] rounded-xl object-contain"
+            />
             <p className="mt-4 font-body text-sm text-cream/90">{selected.caption}</p>
           </div>
         </div>

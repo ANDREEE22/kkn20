@@ -1,5 +1,6 @@
 import Container from '@/components/ui/container';
 import Reveal from '@/components/ui/reveal';
+import AnggotaCard from '@/components/anggota/anggota-card';
 import { anggota, dpl } from '@/data/anggota';
 
 export const metadata = {
@@ -24,18 +25,7 @@ export default function AnggotaPage() {
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {anggota.map((a, i) => (
           <Reveal key={a.id} delay={(i % 4) * 0.08}>
-            <div className="group rounded-2xl border border-ink-border bg-ink-soft p-6 transition-colors hover:border-gold/50">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full border border-gold/30 bg-gold/5 font-display text-lg font-semibold text-gold">
-                {a.inisial}
-              </div>
-              <p className="mt-4 font-display text-base font-semibold leading-snug">
-                {a.nama}
-              </p>
-              <p className="mt-1 font-body text-sm text-muted">{a.jurusan}</p>
-              <p className="mt-3 font-mono text-[0.7rem] uppercase tracking-wider text-terrace-soft">
-                {a.peran}
-              </p>
-            </div>
+            <AnggotaCard anggota={a} />
           </Reveal>
         ))}
       </div>

@@ -21,7 +21,7 @@ export default function Beranda() {
         <Container className="relative flex min-h-[86vh] flex-col justify-center py-24">
           <p className="eyebrow animate-fade-up">Kuliah Kerja Nyata · Kelompok 20</p>
           <h1 className="mt-5 max-w-3xl animate-fade-up font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-7xl">
-            Mengabdi di dataran tinggi{' '}
+            Mengabdi di dataran tinggi desa{' '}
             <span className="italic text-gold">Kabuaran.</span>
           </h1>
           <p className="mt-6 max-w-xl animate-fade-up font-body text-lg leading-relaxed text-muted" style={{ animationDelay: '0.15s' }}>
@@ -75,7 +75,7 @@ export default function Beranda() {
           <Reveal delay={0.1}>
             <p className="font-body text-base leading-relaxed text-cream/80">
               Terletak di Kecamatan Grujugan, Desa Kabuaran dikenal dengan
-              hamparan kebun kopi rakyat dan lahan pertanian yang menjadi
+              hamparan kebun kopi, tembakau dan lahan pertanian yang menjadi
               tumpuan hidup sebagian besar warganya. Selama masa KKN,
               Kelompok 20 tinggal dan berbaur langsung dengan warga untuk
               memahami kebutuhan nyata di lapangan sebelum merancang program
